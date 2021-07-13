@@ -9,12 +9,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-/*
-        val dog = Dog("ポチ", 3)
-        dog.move()
-*/
-        val human = Human("yuki", 18,"読書")
+
+        val human = Human("yuki", 18, hobby = "読書") //インスタンス1
         human.say()
         human.think()
+
+        val human2 = Human("Bob", 28, hobby = "スポーツ")//インスタンス2
+        human2.say()
+        human2.think()
     }
+
 }
